@@ -2,6 +2,10 @@ import streamlit as st
 from clash_client import ClashRoyaleClient
 from translations import TEXTS
 
+import urllib.request
+st.write("IP del servidor:", urllib.request.urlopen("https://api.ipify.org").read().decode())
+
+
 idioma = st.sidebar.radio("🌐 Idioma / Language", ["es", "en"])
 t = TEXTS[idioma]
 cliente = ClashRoyaleClient()
