@@ -1,84 +1,102 @@
-# 👑 Clash Royale Clan Dashboard ⚔️
+# 👑 Clash Royale - Clan Stats Dashboard
 
-Un dashboard interactivo construido en Python con Streamlit para visualizar y analizar estadísticas en tiempo real de los miembros de clanes en Clash Royale, consumiendo la API oficial del juego.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://clash-royale-dashboard.streamlit.app)
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.55-FF4B4B?logo=streamlit&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-> **Proyecto de Portafolio** desarrollado por [@dbloodmoon](https://github.com/dbloodmoon)
+An interactive web dashboard built with **Python** and **Streamlit** to visualize and analyze **Clash Royale** clan statistics in real time using the official Supercell API.
 
----
-
-## ✨ Características
-
-* **Buscador en Vivo**: Ingresa cualquier Tag de Clan oficial y obtén resultados al instante.
-* **Métricas del Clan**: Total de miembros, promedio de copas y copas totales.
-* **Tabla de Miembros**: Visualiza nombre, rol, copas, donaciones e inactividad de cada jugador.
-* **Guerra de Clanes**: Tabla de participantes con datos de la River Race (fama, mazos usados).
-* **Internacionalización**: Interfaz disponible en Español e Inglés (i18n).
-* **Arquitectura OOP**: Cliente API orientado a objetos, fácil de escalar y mantener.
+> 🔗 **Live Demo:** [clash-royale-dashboard.streamlit.app](https://clash-royale-dashboard.streamlit.app)
 
 ---
 
-## 🛠️ Tecnologías
+## ✨ Features
 
-| Tecnología | Uso |
+- 🔍 **Live Clan Search** — Enter any official Clan Tag and get instant results.
+- 📊 **Clan KPIs** — Total members, average trophies, and total trophies at a glance.
+- 👥 **Members Table** — Name, role, trophies, donations, and inactivity tracker for every player.
+- ⚔️ **Clan War (River Race)** — Participation data including fame, boat attacks, and decks used.
+- 🌐 **Bilingual (i18n)** — Full interface available in English and Spanish.
+- 🏗️ **OOP Architecture** — Clean, modular API client designed for scalability.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
 |---|---|
-| **Python 3.x** | Lenguaje principal |
-| **Streamlit** | Interfaz web reactiva |
-| **Requests** | Consumo de API REST |
-| **python-dotenv** | Gestión segura de credenciales |
-| **Pandas** | Manejo de DataFrames |
+| **Python 3.x** | Core language |
+| **Streamlit** | Reactive web UI framework |
+| **Requests** | REST API consumption |
+| **python-dotenv** | Secure credential management |
+| **Pandas** | DataFrame handling |
+| **Clash Royale API** | Official Supercell data source |
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
-API/
-├── app.py              # Interfaz web (Streamlit)
-├── clash_client.py     # Cliente de la API de Clash Royale (OOP)
-├── translations.py     # Sistema de internacionalización (i18n)
-├── main.py             # Script de pruebas en consola
-├── requirements.txt    # Dependencias del proyecto
-├── .env                # Variables de entorno (NO incluido en el repo)
-└── .gitignore          # Archivos excluidos de Git
+├── app.py              # Web interface (Streamlit)
+├── clash_client.py     # Clash Royale API client (OOP)
+├── translations.py     # Internationalization system (i18n)
+├── main.py             # Console testing script
+├── requirements.txt    # Project dependencies
+├── .env                # Environment variables (NOT in repo)
+└── .gitignore          # Git excluded files
 ```
 
 ---
 
-## 🚀 Cómo ejecutar localmente
+## 🚀 Run Locally
 
-1. **Clona este repositorio:**
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/dbloodmoon/clash-royale-dashboard.git
    cd clash-royale-dashboard
    ```
 
-2. **Crea un entorno virtual e instala las dependencias:**
+2. **Create a virtual environment and install dependencies:**
    ```bash
    python -m venv venv
-   source venv/bin/activate  # En Windows: venv\Scripts\activate
+   source venv/bin/activate  # Windows: venv\Scripts\activate
    pip install -r requirements.txt
    ```
 
-3. **Configura tus credenciales:**
+3. **Set up your credentials:**
 
-   Crea un archivo `.env` en la raíz del proyecto con tu Token de desarrollador de Clash Royale (obtenible en [developer.clashroyale.com](https://developer.clashroyale.com/)):
+   Create a `.env` file in the project root with your Clash Royale Developer Token (get it at [developer.clashroyale.com](https://developer.clashroyale.com/)):
    ```env
-   CLASH_TOKEN=tu_token_aqui
+   CLASH_TOKEN=your_token_here
    ```
 
-4. **Arranca el Dashboard:**
+4. **Launch the Dashboard:**
    ```bash
    streamlit run app.py
    ```
 
 ---
 
-## 📸 Preview
+## 🌐 Deploy to Streamlit Cloud
 
-> *Próximamente: capturas del Dashboard*
+1. Push this repo to GitHub.
+2. Go to [share.streamlit.io](https://share.streamlit.io) and connect your repo.
+3. Add your `CLASH_TOKEN` under **Settings → Secrets**.
+4. **Important:** Generate a new API key at [developer.clashroyale.com](https://developer.clashroyale.com/) using the Streamlit Cloud server IP.
 
 ---
 
-## 📄 Licencia
+## 📸 Preview
 
-Este proyecto es de código abierto bajo la licencia MIT.
+> *Screenshots coming soon*
+
+---
+
+## 👨‍💻 Author
+
+Developed by **[@dbloodmoon](https://github.com/dbloodmoon)** — Computer Science Engineer.
+
+## 📄 License
+
+This project is open source under the [MIT License](LICENSE).

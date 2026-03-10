@@ -2,13 +2,13 @@
 
 TEXTS = {
     "es": {
-        "title": "Dashboard de Miembros del Clan ⚔️",
+        "title": "Clash Royale - Clan Stats Dashboard ⚔️",
         "search_label": "Ingresa el Tag del Clan:",
         "total_members": "Total de Miembros",
         "avg_trophies": "Promedio de Copas",
         "total_trophies": "Copas Totales",
-        "player_list": "Lista de Jugadores",
-        "war_list": "Lista de Participantes en la Guerra",
+        "player_list": "Miembros del Clan",
+        "war_list": "Participantes en Guerra de Clanes",
         "search_error": "Error al buscar el clan",
         "war_error": "Error al buscar la guerra del clan",
         "footer": "Desarrollado por: @dbloodmoon",
@@ -32,13 +32,13 @@ TEXTS = {
         "plural_s": "s",
     },
     "en": {
-        "title": "Clan Members Dashboard ⚔️",
+        "title": "Clash Royale - Clan Stats Dashboard ⚔️",
         "search_label": "Enter the Clan Tag:",
         "total_members": "Total Members",
         "avg_trophies": "Average Trophies",
         "total_trophies": "Total Trophies",
-        "player_list": "Player List",
-        "war_list": "War Participants List",
+        "player_list": "Clan Members",
+        "war_list": "Clan War Participants",
         "search_error": "Error searching the clan",
         "war_error": "Error searching the clan war",
         "footer": "Developed by: @dbloodmoon",
