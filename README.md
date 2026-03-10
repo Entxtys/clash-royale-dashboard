@@ -81,7 +81,6 @@ An interactive web dashboard built with **Python** and **Streamlit** to visualiz
 ## 📸 Preview
 
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/5dd9c381-d5da-4aa6-8634-eebcd8671e84" />
-<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/8c828de5-1dea-4eca-82bb-dbcee52e3f7e" />
 
 ---
 
