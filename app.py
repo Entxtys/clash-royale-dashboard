@@ -57,3 +57,11 @@ if clan_buscado:
     
 st.markdown("---")
 st.write(t["footer"])
+st.markdown(
+    f'<div style="text-align:center;margin-top:10px;">'
+    f'<a href="https://paypal.me/DMolinaInojosa" target="_blank" '
+    f'style="display:inline-block;background:linear-gradient(135deg,#6366f1,#8b5cf6);'
+    f'color:white;padding:10px 24px;border-radius:10px;text-decoration:none;font-weight:bold;'
+    f'font-size:15px;">💜 {t["donate"]}</a></div>',
+    unsafe_allow_html=True
+)
