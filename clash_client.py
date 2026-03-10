@@ -104,7 +104,6 @@ class ClashRoyaleClient:
         for miembro in raw_members_data.get("items", []):
             miembros_limpios.append({
                 t["col_name"]: miembro["name"],
-                t["col_tag"]: miembro["tag"],
                 t["col_role"]: miembro["role"],
                 t["col_trophies"]: miembro["trophies"],
                 t["col_donations"]: miembro.get("donations", 0),

@@ -1,13 +1,17 @@
 import streamlit as st
 from clash_client import ClashRoyaleClient
 from translations import TEXTS
-import urllib.request
-st.write("🔍 Server IP:", urllib.request.urlopen("https://api.ipify.org").read().decode())
 
 idioma = st.sidebar.radio("🌐 Idioma / Language", ["es", "en"])
 t = TEXTS[idioma]
 st.sidebar.markdown("---")
-st.sidebar.markdown("💜 [" + t["donate"] + "](https://paypal.me/DMolinaInojosa)")
+st.sidebar.markdown(
+    f'<a href="https://paypal.me/DMolinaInojosa" target="_blank" '
+    f'style="display:block;text-align:center;background:linear-gradient(135deg,#6366f1,#8b5cf6);'
+    f'color:white;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:bold;'
+    f'font-size:16px;">💜 {t["donate"]}</a>',
+    unsafe_allow_html=True
+)
 cliente = ClashRoyaleClient()
 
 st.set_page_config(page_title=t["title"], page_icon="👑", layout="wide")
