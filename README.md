@@ -78,24 +78,16 @@ An interactive web dashboard built with **Python** and **Streamlit** to visualiz
 
 ---
 
-## 🌐 Deploy to Streamlit Cloud
-
-1. Push this repo to GitHub.
-2. Go to [share.streamlit.io](https://share.streamlit.io) and connect your repo.
-3. Add your `CLASH_TOKEN` under **Settings → Secrets**.
-4. **Important:** Generate a new API key at [developer.clashroyale.com](https://developer.clashroyale.com/) using the Streamlit Cloud server IP.
-
----
-
 ## 📸 Preview
 
-> *Screenshots coming soon*
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/5dd9c381-d5da-4aa6-8634-eebcd8671e84" />
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/8c828de5-1dea-4eca-82bb-dbcee52e3f7e" />
 
 ---
 
 ## 👨‍💻 Author
 
-Developed by **[@dbloodmoon](https://github.com/dbloodmoon)** — Computer Science Engineer.
+Developed by **[@dbloodmoon](https://github.com/dbloodmoon)** — B.S Computer Science.
 
 ## 📄 License
 
