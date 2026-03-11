@@ -3,7 +3,11 @@
 TEXTS = {
     "es": {
         "title": "Clash Royale - Estadísticas de Clan ⚔️",
-        "search_label": "Ingresa el Tag del Jugador:",
+        "search_label": "Ingresa el Tag:",
+        "search_mode": "🔎 Buscar por:",
+        "mode_player": "👤 Jugador",
+        "mode_clan": "🛡️ Clan",
+        "no_clan_short": "Sin Clan",
         "total_members": "Total de Miembros",
         "avg_trophies": "Promedio de Copas",
         "total_trophies": "Copas Totales",
@@ -70,7 +74,11 @@ TEXTS = {
     },
     "en": {
         "title": "Clash Royale - Clan Stats Dashboard ⚔️",
-        "search_label": "Enter the Player Tag:",
+        "search_label": "Enter the Tag:",
+        "search_mode": "🔎 Search by:",
+        "mode_player": "👤 Player",
+        "mode_clan": "🛡️ Clan",
+        "no_clan_short": "No Clan",
         "total_members": "Total Members",
         "avg_trophies": "Average Trophies",
         "total_trophies": "Total Trophies",
