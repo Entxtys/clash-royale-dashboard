@@ -27,7 +27,7 @@ if tag_buscado:
             has_clan = clan_data is not None
             clan_tag = clan_data.get("tag", "") if has_clan else ""
 
-            tab1, tab2, tab3 = st.tabs([t["tab_overview"], t["tab_members"], t["tab_war"]])
+            tab1, tab2, tab3 = st.tabs([t["tab_player_overview"], t["tab_members"], t["tab_war"]])
 
             # ========== TAB 1: PERFIL DEL JUGADOR ==========
             with tab1:
