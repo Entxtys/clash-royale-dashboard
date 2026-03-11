@@ -85,6 +85,28 @@ class ClashRoyaleClient:
         }
         return limpio
 
+    def get_clan_info(self, clan_tag: str) -> dict:
+        """
+        Obtiene la información general del clan desde la API.
+        Endpoint: /clans/{clanTag}
+        """
+        formatted_tag = self._format_tag(clan_tag)
+        url = self.base_url + "clans/" + formatted_tag
+        response = requests.request("GET", url, headers=self.headers)
+        data = response.json()
+        
+        return {
+            "name": data.get("name", ""),
+            "description": data.get("description", ""),
+            "type": data.get("type", ""),
+            "clan_score": data.get("clanScore", 0),
+            "war_trophies": data.get("clanWarTrophies", 0),
+            "donations_per_week": data.get("donationsPerWeek", 0),
+            "required_trophies": data.get("requiredTrophies", 0),
+            "members_count": data.get("members", 0),
+            "location": data.get("location", {}).get("name", "N/A"),
+        }
+
     def get_clan_members(self, clan_tag: str) -> dict:
         """
         Obtiene la lista cruda de miembros de un clan desde la API.
