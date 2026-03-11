@@ -1,11 +1,11 @@
-# 👑 Clash Royale - Clan Stats Dashboard
+# 👑 Clash Royale - Stats Tracker
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://clash-royale-dashboard.streamlit.app)
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.55-FF4B4B?logo=streamlit&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-An interactive web dashboard built with **Python** and **Streamlit** to visualize and analyze **Clash Royale** clan statistics in real time using the official Supercell API.
+An interactive web application built with **Python** and **Streamlit** to search, visualize, and analyze **Clash Royale** player and clan statistics in real-time, using the official Supercell API.
 
 > 🔗 **Live Demo:** [clash-royale-dashboard.streamlit.app](https://clash-royale-dashboard.streamlit.app)
 
@@ -13,10 +13,12 @@ An interactive web dashboard built with **Python** and **Streamlit** to visualiz
 
 ## ✨ Features
 
-- 🔍 **Live Clan Search** — Enter any official Clan Tag and get instant results.
-- 📊 **Clan KPIs** — Total members, average trophies, and total trophies at a glance.
-- 👥 **Members Table** — Name, role, trophies, donations, and inactivity tracker for every player.
-- ⚔️ **Clan War (River Race)** — Participation data including fame, boat attacks, and decks used.
+- 🔍 **Dual Search Mode** — Search by Player Tag (default) or Clan Tag.
+- 👤 **Player Profiles** — Deep dive into combat stats, including win rates, total battles, max challenge wins, and more.
+- 🛡️ **Auto-Clan Detection** — Searching a player automatically detects their clan and unlocks clan analytics (if applicable).
+- 📊 **Clan KPIs** — Total members, average trophies, weekly donations, and total score at a glance.
+- ⚔️ **Clan War Analytics** — War participation data, and historical Clan War performance (wins, average fame, clan win rate).
+- 👥 **Interactive Members Table** — Filterable list of all members with an integrated selector to instantly load any member's individual combat stats.
 - 🌐 **Bilingual (i18n)** — Full interface available in English and Spanish.
 - 🏗️ **OOP Architecture** — Clean, modular API client designed for scalability.
 
