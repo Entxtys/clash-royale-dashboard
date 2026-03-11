@@ -85,20 +85,18 @@ class ClashRoyaleClient:
         }
         return limpio
 
-    def get_player_stats(self, player_tag: str, t: dict) -> dict:
+    def get_player_stats(self, raw_data: dict, t: dict) -> dict:
         """
-        Obtiene las estadísticas de combate de un jugador.
+        Toma los datos crudos de un jugador y extrae sus estadísticas de combate.
         Calcula el win rate a partir de victorias y batallas totales.
         """
-        data = self.get_player_data(player_tag)
-        
-        wins = data.get("wins", 0)
-        losses = data.get("losses", 0)
-        battle_count = data.get("battleCount", 0)
-        three_crown_wins = data.get("threeCrownWins", 0)
-        best_trophies = data.get("bestTrophies", 0)
-        challenge_max_wins = data.get("challengeMaxWins", 0)
-        war_day_wins = data.get("warDayWins", 0)
+        wins = raw_data.get("wins", 0)
+        losses = raw_data.get("losses", 0)
+        battle_count = raw_data.get("battleCount", 0)
+        three_crown_wins = raw_data.get("threeCrownWins", 0)
+        best_trophies = raw_data.get("bestTrophies", 0)
+        challenge_max_wins = raw_data.get("challengeMaxWins", 0)
+        war_day_wins = raw_data.get("warDayWins", 0)
         
         win_rate = round((wins / battle_count) * 100, 1) if battle_count > 0 else 0
         
