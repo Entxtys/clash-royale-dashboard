@@ -121,17 +121,7 @@ class ClashRoyaleClient:
         response = requests.request("GET", url, headers=self.headers)
         data = response.json()
         
-        return {
-            "name": data.get("name", ""),
-            "description": data.get("description", ""),
-            "type": data.get("type", ""),
-            "clan_score": data.get("clanScore", 0),
-            "war_trophies": data.get("clanWarTrophies", 0),
-            "donations_per_week": data.get("donationsPerWeek", 0),
-            "required_trophies": data.get("requiredTrophies", 0),
-            "members_count": data.get("members", 0),
-            "location": data.get("location", {}).get("name", "N/A"),
-        }
+        return data
 
     def get_clan_war_log(self, clan_tag: str) -> list:
         """

@@ -86,20 +86,28 @@ if tag_buscado:
 
                     st.subheader(t["clan_overview"])
                     co1, co2, co3 = st.columns(3)
+                    
+                    members_count = clan_info.get("members", 0)
+                    clan_score = clan_info.get("clanScore", 0)
+                    war_trophies = clan_info.get("clanWarTrophies", 0)
+                    donations_pw = clan_info.get("donationsPerWeek", 0)
+                    req_trophies = clan_info.get("requiredTrophies", 0)
+                    clan_type_raw = clan_info.get("type", "")
+
                     with co1:
-                        st.metric(t["total_members"], f"{clan_info['members_count']} / 50")
+                        st.metric(t["total_members"], f"{members_count} / 50")
                     with co2:
-                        st.metric(t["clan_score"], f"🏆 {clan_info['clan_score']:,}")
+                        st.metric(t["clan_score"], f"🏆 {clan_score:,}")
                     with co3:
-                        st.metric(t["war_trophies"], f"⚔️ {clan_info['war_trophies']:,}")
+                        st.metric(t["war_trophies"], f"⚔️ {war_trophies:,}")
 
                     co4, co5, co6 = st.columns(3)
                     with co4:
-                        st.metric(t["donations_week"], f"🎁 {clan_info['donations_per_week']:,}")
+                        st.metric(t["donations_week"], f"🎁 {donations_pw:,}")
                     with co5:
-                        st.metric(t["required_trophies"], f"🔒 {clan_info['required_trophies']:,}")
+                        st.metric(t["required_trophies"], f"🔒 {req_trophies:,}")
                     with co6:
-                        clan_type = t.get("type_" + clan_info["type"], clan_info["type"])
+                        clan_type = t.get("type_" + clan_type_raw, clan_type_raw)
                         st.metric(t["clan_type"], f"📋 {clan_type}")
 
             # ========== TAB 2: MIEMBROS DEL CLAN ==========
@@ -203,20 +211,28 @@ if tag_buscado:
             with tab1:
                 st.subheader(t["clan_overview"])
                 co1, co2, co3 = st.columns(3)
+                
+                members_count = clan_info.get("members", 0)
+                clan_score = clan_info.get("clanScore", 0)
+                war_trophies = clan_info.get("clanWarTrophies", 0)
+                donations_pw = clan_info.get("donationsPerWeek", 0)
+                req_trophies = clan_info.get("requiredTrophies", 0)
+                clan_type_raw = clan_info.get("type", "")
+
                 with co1:
-                    st.metric(t["total_members"], f"{clan_info['members_count']} / 50")
+                    st.metric(t["total_members"], f"{members_count} / 50")
                 with co2:
-                    st.metric(t["clan_score"], f"🏆 {clan_info['clan_score']:,}")
+                    st.metric(t["clan_score"], f"🏆 {clan_score:,}")
                 with co3:
-                    st.metric(t["war_trophies"], f"⚔️ {clan_info['war_trophies']:,}")
+                    st.metric(t["war_trophies"], f"⚔️ {war_trophies:,}")
 
                 co4, co5, co6 = st.columns(3)
                 with co4:
-                    st.metric(t["donations_week"], f"🎁 {clan_info['donations_per_week']:,}")
+                    st.metric(t["donations_week"], f"🎁 {donations_pw:,}")
                 with co5:
-                    st.metric(t["required_trophies"], f"🔒 {clan_info['required_trophies']:,}")
+                    st.metric(t["required_trophies"], f"🔒 {req_trophies:,}")
                 with co6:
-                    clan_type = t.get("type_" + clan_info["type"], clan_info["type"])
+                    clan_type = t.get("type_" + clan_type_raw, clan_type_raw)
                     st.metric(t["clan_type"], f"📋 {clan_type}")
 
                 war_log = cliente.get_clan_war_log(clan_tag)
