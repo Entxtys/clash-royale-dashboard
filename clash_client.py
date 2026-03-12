@@ -184,8 +184,7 @@ class ClashRoyaleClient:
         response = requests.request("GET", url, headers=self.headers)
         datos = response.json()
         participantes = datos.get("clan", {}).get("participants", [])
-        estado = datos.get("state", "Desconocido")
-        return participantes, estado
+        return participantes
 
     def extract_war_participants(self, raw_participants: list, t: dict) -> list:
         """

@@ -169,11 +169,9 @@ if tag_buscado:
             # ========== TAB 3: GUERRA ==========
             with tab3:
                 if has_clan:
-                    participantes, estado_guerra = cliente.get_clan_war_participation(clan_tag)
+                    participantes = cliente.get_clan_war_participation(clan_tag)
                     participantes_limpios = cliente.extract_war_participants(participantes, t)
                     st.subheader(t["war_list"])
-                    estado_traducido = t.get(f"state_{estado_guerra}", estado_guerra)
-                    st.metric(t["war_state"], f"🏁 {estado_traducido}")
                     st.dataframe(participantes_limpios, width='stretch', height=400, hide_index=True)
 
                     # Stats de guerra del clan
@@ -306,11 +304,9 @@ if tag_buscado:
                         st.metric(keys[7], vals[7])
 
             with tab3:
-                participantes, estado_guerra = cliente.get_clan_war_participation(clan_tag)
+                participantes = cliente.get_clan_war_participation(clan_tag)
                 participantes_limpios = cliente.extract_war_participants(participantes, t)
                 st.subheader(t["war_list"])
-                estado_traducido = t.get(f"state_{estado_guerra}", estado_guerra)
-                st.metric(t["war_state"], f"🏁 {estado_traducido}")
                 st.dataframe(participantes_limpios, width='stretch', height=400, hide_index=True)
 
                 # Stats de guerra del clan
